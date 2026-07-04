@@ -1,0 +1,41 @@
+<div class="container mt-5">
+
+    <h2 class="text-center mb-4">
+        Leave History
+    </h2>
+
+    <table class="table table-bordered table-striped">
+
+        <thead>
+
+        <tr>
+
+            <th>ID</th>
+            <th>Leave Type</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Reason</th>
+            <th>Status</th>
+
+        </tr>
+
+        </thead>
+
+        <tbody>
+
+        <tr *ngFor="let leave of leaves">
+
+            <td>{{ leave.id }}</td>
+            <td>{{ leave.leaveType }}</td>
+            <td>{{ leave.startDate }}</td>
+            <td>{{ leave.endDate }}</td>
+            <td>{{ leave.reason }}</td>
+            <td>{{ leave.status }}</td>
+
+        </tr>
+
+        </tbody>
+
+    </table>
+
+</div>
